@@ -1,8 +1,8 @@
  
 
-const p=new Promise ((resolve,reject)=>{
-    setTimeout(()=> resolve ("p sucess"),1000);
-})
+ const p= new Promise ((resolve ,reject)=>{
+        setTimeout(() => resolve("P2 Success"), 1000);
+ })
 
 const p2 = new Promise((resolve, reject) => {
     setTimeout(() => resolve("P2 Success"), 1000);
