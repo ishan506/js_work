@@ -1,0 +1,13 @@
+const p1 = {
+    name: "Ishan",
+    print: function(city) {
+        console.log(this.name + " " + city);
+    }
+};
+
+const p2 = {
+    name: "Rahul"
+};
+
+// Borrow print() from p1
+p1.print.call(p2, "Delhi");
