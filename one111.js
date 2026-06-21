@@ -19,7 +19,8 @@
 const expensive = () => {
     console.log("Expensive Function");
 };
+//betterExpensive is the throttled version of expensive.
+const betterExpensive = throttle(expensive, 10000);
 
-const betterExpensive = throttle(expensive, 1000);
-
-window.addEventListener("resize", betterExpensive);
+window.addEventListener("resize",betterExpensive);
+//window.addEventListener(eventName callbackFunction);
